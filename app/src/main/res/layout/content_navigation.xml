@@ -12,5 +12,12 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.devfest.its.its_devfest.HomeActivity"
     tools:showIn="@layout/app_bar_navigation">
+    <Button
+        android:id="@+id/button_sign_out"
+        android:text="SignOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
 
 </RelativeLayout>
