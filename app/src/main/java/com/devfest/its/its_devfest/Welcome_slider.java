@@ -1,4 +1,4 @@
-package com.example.dorsaf.sliber;
+package  com.devfest.its.its_devfest;
 
 import android.content.Context;
 import android.content.Intent;
@@ -26,7 +26,7 @@ public class Welcome_slider extends AppCompatActivity {
     private TextView[] dots;
     private int[] layouts;
     private Button btnSkip, btnNext;
-    private SharedPrefManager prefManager;
+    private  com.devfest.its.its_devfest.SharedPrefManager prefManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class Welcome_slider extends AppCompatActivity {
         setContentView(R.layout.activity_welcome_slider);
 
         // Checking for first time launch - before calling setContentView()
-        prefManager = new SharedPrefManager(this);
+        prefManager = new  com.devfest.its.its_devfest.SharedPrefManager(this);
         if (!prefManager.isFirstTimeLaunch()) {
             launchHomeScreen();
             finish();
