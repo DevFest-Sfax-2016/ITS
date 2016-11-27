@@ -20,6 +20,7 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_navigation"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".NewPostActivity" />
         <activity
             android:name=".Profile"
@@ -33,6 +34,10 @@
             android:name=".PostsActivity"
             android:label="@string/title_activity_posts"
             android:theme="@style/AppTheme"></activity>
+
+        <activity android:name=".LoginDev" />
+        <activity android:name=".MainAuth" />
+        <activity android:name=".Loginste"></activity>
     </application>
 
 </manifest>
