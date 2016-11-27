@@ -138,7 +138,7 @@ public class Loginste extends BaseActivity implements View.OnClickListener{
 
 
         // Go to MainActivity
-        startActivity(new Intent(Loginste.this, HomeActivity.class));
+        startActivity(new Intent(Loginste.this, PagesDeveloper.class));
         finish();
     }
     private void signIn() {

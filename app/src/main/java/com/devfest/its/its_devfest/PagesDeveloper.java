@@ -29,6 +29,7 @@ ListView ls ;
                     String num = "22815521";
                     String message = "est ce que vous ete interesse de notre societe";
                     sms.sendTextMessage(num,null,message,null,null);
+
                 }else if(i == 1){
                     SmsManager sms = SmsManager.getDefault();
                     String num = "54328695";
@@ -40,6 +41,8 @@ ListView ls ;
                     String message = "est ce que vous ete interesse de notre societe";
                     sms.sendTextMessage(num,null,message,null,null);
                 }
+                Toast.makeText(PagesDeveloper.this, "SMS Sent successfully !",
+                        Toast.LENGTH_SHORT).show();
             }
         });
     }
