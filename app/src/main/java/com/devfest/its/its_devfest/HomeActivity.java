@@ -19,7 +19,7 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+        implements NavigationView.OnNavigationItemSelectedListener {
     private Button mSignOutButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,8 @@ public class HomeActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
 
-        mSignOutButton = (Button) findViewById(R.id.button_sign_out);
-        mSignOutButton.setOnClickListener(this);
+        //mSignOutButton = (Button) findViewById(R.id.button_sign_out);
+        //mSignOutButton.setOnClickListener(this);
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -97,14 +97,14 @@ public class HomeActivity extends AppCompatActivity
         finish();
     }
 
-    @Override
+    /*@Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button_sign_out:
                 signOut();
                 break;
         }
-    }
+    }*/
 
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -126,7 +126,7 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.Settings) {
 
         } else if(id == R.id.Logout){
-
+            signOut();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
