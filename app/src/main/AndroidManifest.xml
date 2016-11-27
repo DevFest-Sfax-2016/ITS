@@ -21,6 +21,14 @@
             android:label="@string/title_activity_navigation"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".NewPostActivity"></activity>
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PageProjects"
+            android:label="@string/title_activity_page_projects"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

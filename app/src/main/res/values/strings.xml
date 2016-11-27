@@ -30,4 +30,6 @@
     <string name="title_activity_intro_1">Trouvez les meilleurs plats tunisiens</string>
     <string name="title_activity_intro_2">Choisissez vos plats et mettez les dans votre liste de favories</string>
     <string name="title_activity_intro_3">Partagez vos plats avec vos amis sur les réseaux sociaux</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_page_projects">PageProjects</string>
 </resources>

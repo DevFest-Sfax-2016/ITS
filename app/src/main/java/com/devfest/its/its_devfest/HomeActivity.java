@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -21,6 +22,9 @@ import com.google.firebase.auth.FirebaseAuth;
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private Button mSignOutButton;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +54,7 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -95,6 +100,8 @@ public class HomeActivity extends AppCompatActivity
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(this, MainActivity.class));
         finish();
+        Intent intent = new Intent(getApplicationContext(),Profile.class);
+        startActivity(intent);
     }
 
     /*@Override
