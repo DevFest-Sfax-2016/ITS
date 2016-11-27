@@ -48,6 +48,8 @@ public class MainAuth extends BaseActivity implements View.OnClickListener{
 
         //ste
 
+        initFirebase();
+
         ste.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,8 +59,7 @@ public class MainAuth extends BaseActivity implements View.OnClickListener{
         });
 
 
-        initFirebase();
-        initView();
+       // initView();
     }
 
 
@@ -71,8 +72,8 @@ public class MainAuth extends BaseActivity implements View.OnClickListener{
 
 
         // Click listeners
-        mSignInButton.setOnClickListener(this);
-        mSignUpButton.setOnClickListener(this);
+        /*mSignInButton.setOnClickListener(this);
+        mSignUpButton.setOnClickListener(this);*/
     }
     private void writeNewUser(String userId, String name) {
         User userDev = new User(name);
@@ -128,4 +129,5 @@ public class MainAuth extends BaseActivity implements View.OnClickListener{
     public void onClick(View view) {
 
     }
+
 }
