@@ -26,4 +26,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="title_activity_intro_1">Trouvez les meilleurs plats tunisiens</string>
+    <string name="title_activity_intro_2">Choisissez vos plats et mettez les dans votre liste de favories</string>
+    <string name="title_activity_intro_3">Partagez vos plats avec vos amis sur les réseaux sociaux</string>
 </resources>

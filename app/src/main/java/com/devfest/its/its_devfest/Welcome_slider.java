@@ -18,6 +18,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.devfest.its.its_devfest.helper.SharedPrefManager;
+
 public class Welcome_slider extends AppCompatActivity {
 
     private ViewPager viewPager;
@@ -26,7 +28,7 @@ public class Welcome_slider extends AppCompatActivity {
     private TextView[] dots;
     private int[] layouts;
     private Button btnSkip, btnNext;
-    private  com.devfest.its.its_devfest.SharedPrefManager prefManager;
+    private SharedPrefManager prefManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +36,7 @@ public class Welcome_slider extends AppCompatActivity {
         setContentView(R.layout.activity_welcome_slider);
 
         // Checking for first time launch - before calling setContentView()
-        prefManager = new  com.devfest.its.its_devfest.SharedPrefManager(this);
+        prefManager = new SharedPrefManager(this);
         if (!prefManager.isFirstTimeLaunch()) {
             launchHomeScreen();
             finish();

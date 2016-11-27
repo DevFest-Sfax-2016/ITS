@@ -1,4 +1,4 @@
-package  com.devfest.its.its_devfest;
+package com.devfest.its.its_devfest.helper;
 
 import android.content.Context;
 import android.content.SharedPreferences;

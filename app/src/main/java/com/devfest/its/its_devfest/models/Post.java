@@ -2,6 +2,7 @@ package com.devfest.its.its_devfest.models;
 
 import com.google.firebase.database.Exclude;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,7 +10,8 @@ import java.util.Map;
  * Created by schhaiderahmed on 26/11/16.
  */
 
-public class Post {
+public class Post implements Serializable {
+
 
 
     public String uid;
