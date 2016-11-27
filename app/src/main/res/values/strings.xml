@@ -32,4 +32,5 @@
     <string name="title_activity_intro_3">Partagez vos plats avec vos amis sur les réseaux sociaux</string>
     <string name="title_activity_profile">Profile</string>
     <string name="title_activity_page_projects">PageProjects</string>
+    <string name="title_activity_posts">PostsActivity</string>
 </resources>

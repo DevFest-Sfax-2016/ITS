@@ -100,8 +100,8 @@ public class HomeActivity extends AppCompatActivity
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(this, MainActivity.class));
         finish();
-        Intent intent = new Intent(getApplicationContext(),Profile.class);
-        startActivity(intent);
+        /*Intent intent = new Intent(getApplicationContext(),Profile.class);
+        startActivity(intent);*/
     }
 
     /*@Override
@@ -118,14 +118,19 @@ public class HomeActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+        Intent intent;
         int id = item.getItemId();
 
         if (id == R.id.Profile) {
+            intent = new Intent(getApplicationContext(),Profile.class);
+            startActivity(intent);
             // Handle the camera action
         } else if (id == R.id.Projects) {
-
+            intent = new Intent(getApplicationContext(),PageProjects.class);
+            startActivity(intent);
         } else if (id == R.id.Post) {
-
+            intent = new Intent(getApplicationContext(),PostsActivity.class);
+            startActivity(intent);
         } else if (id == R.id.Messages) {
 
         } else if (id == R.id.offert) {

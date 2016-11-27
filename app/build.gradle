@@ -38,6 +38,11 @@ dependencies {
 
     //add eventbus
     compile 'org.greenrobot:eventbus:3.0.0'
+
+
+
+    compile 'com.google.firebase:firebase-crash:9.8.0'
+
 }
 
 

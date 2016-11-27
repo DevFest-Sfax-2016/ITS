@@ -13,4 +13,18 @@
     tools:context="com.devfest.its.its_devfest.PostsActivity"
     tools:showIn="@layout/activity_posts">
 
+
+    <TextView
+        android:id="@+id/post_message"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"/>
+
+
+    <Button
+        android:id="@+id/button_sign_out"
+        android:text="SignOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>

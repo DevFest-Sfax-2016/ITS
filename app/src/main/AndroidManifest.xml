@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Welcome_slider">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +20,7 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_navigation"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".NewPostActivity"></activity>
+        <activity android:name=".NewPostActivity" />
         <activity
             android:name=".Profile"
             android:label="@string/title_activity_profile"
@@ -28,7 +28,11 @@
         <activity
             android:name=".PageProjects"
             android:label="@string/title_activity_page_projects"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PostsActivity"
+            android:label="@string/title_activity_posts"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
