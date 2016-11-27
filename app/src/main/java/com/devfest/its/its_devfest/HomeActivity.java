@@ -102,6 +102,7 @@ public class HomeActivity extends AppCompatActivity
         finish();
         /*Intent intent = new Intent(getApplicationContext(),Profile.class);
         startActivity(intent);*/
+
     }
 
     /*@Override
@@ -121,16 +122,17 @@ public class HomeActivity extends AppCompatActivity
         Intent intent;
         int id = item.getItemId();
 
-        if (id == R.id.Profile) {
-            intent = new Intent(getApplicationContext(),Profile.class);
-            startActivity(intent);
-            // Handle the camera action
+        if (id == R.id.Profile)
+        { Intent i = new Intent(getApplicationContext(),Profile.class);
+            startActivity(i);
         } else if (id == R.id.Projects) {
-            intent = new Intent(getApplicationContext(),PageProjects.class);
-            startActivity(intent);
+            Intent v = new Intent(getApplicationContext(),PageProjects.class);
+            startActivity(v);
+
         } else if (id == R.id.Post) {
-            intent = new Intent(getApplicationContext(),PostsActivity.class);
-            startActivity(intent);
+            Intent ty = new Intent(getApplicationContext(),PagesDeveloper.class);
+            startActivity(ty);
+
         } else if (id == R.id.Messages) {
 
         } else if (id == R.id.offert) {

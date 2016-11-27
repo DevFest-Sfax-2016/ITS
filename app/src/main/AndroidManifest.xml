@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.devfest.its.its_devfest">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,6 +27,8 @@
             android:label="@string/title_activity_navigation"
             android:theme="@style/AppTheme.NoActionBar" />
 
+
+
         <activity android:name=".NewPostActivity" />
         <activity
             android:name=".Profile"
@@ -30,6 +38,8 @@
             android:name=".PageProjects"
             android:label="@string/title_activity_page_projects"
             android:theme="@style/AppTheme.NoActionBar" />
+
+
         <activity
             android:name=".PostsActivity"
             android:label="@string/title_activity_posts"
@@ -38,6 +48,14 @@
         <activity android:name=".LoginDev" />
         <activity android:name=".MainAuth" />
         <activity android:name=".Loginste"></activity>
+
+
+        <activity android:name=".PagesDeveloper" />
+        <receiver android:name=".ResiveMessage">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

@@ -27,7 +27,11 @@
                 android:foreground="?attr/selectableItemBackground"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true">
-
+                 <ImageView
+                     android:padding="1dp"
+                     android:src="@drawable/phone"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
                 <TextView
                     android:id="@+id/tv_repas_detail_name"
                     android:layout_width="wrap_content"
@@ -59,28 +63,17 @@
 
                     <TextView
                         android:id="@+id/Profile"
+                        android:padding="1dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
                         android:layout_centerHorizontal="true"
-                        android:drawableLeft="@drawable/post"
+                        android:drawableLeft="@drawable/email"
                         android:drawablePadding="5dp"
                         android:layout_marginTop="10dp"
                         android:layout_gravity="center|left"
                         android:layout_marginLeft="10dp"/>
 
-                    <TextView
-                        android:id="@+id/tv_repas_detail_duree_cuisson"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/Profile"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerHorizontal="true"
-                        android:drawableLeft="@drawable/post"
-                        android:drawablePadding="5dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_gravity="left"
-                        android:layout_marginLeft="10dp"/>
 
                 </LinearLayout>
 
@@ -101,6 +94,8 @@
 
                 <TextView
                     android:id="@+id/detaille"
+                    android:padding="1dp"
+                    android:drawableLeft="@drawable/home"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
