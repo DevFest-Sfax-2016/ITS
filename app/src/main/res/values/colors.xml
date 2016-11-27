@@ -3,6 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
 
 
     <!-- Screens background color-->
@@ -36,4 +37,7 @@
         <item>@color/dot_dark_screen3</item>
         <item>@color/dot_dark_screen4</item>
     </array>
+    <!-- aythentification colors    -->
+    <color name="colortext">#100b20</color>
+    <color name="colorhint">#a9aaac</color>
 </resources>
