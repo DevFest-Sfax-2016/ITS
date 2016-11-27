@@ -19,7 +19,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginLeft="40dp"
 
-        android:src="@drawable/sans"/>
+        android:src="@drawable/logo"/>
 
 
     <LinearLayout
@@ -33,7 +33,7 @@
 
 
         <Button
-            android:id="@+id/button_sign_in"
+            android:id="@+id/button_dev"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
@@ -47,7 +47,7 @@
 
 
         <Button
-            android:id="@+id/button_sign_up"
+            android:id="@+id/button_ste"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
