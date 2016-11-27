@@ -100,8 +100,7 @@ public class HomeActivity extends AppCompatActivity
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(this, MainActivity.class));
         finish();
-        Intent intent = new Intent(getApplicationContext(),Profile.class);
-        startActivity(intent);
+
     }
 
     /*@Override
@@ -121,10 +120,15 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.Profile) {
-            // Handle the camera action
+            Intent i = new Intent(getApplicationContext(),Profile.class);
+            startActivity(i);
         } else if (id == R.id.Projects) {
+            Intent v = new Intent(getApplicationContext(),PageProjects.class);
+            startActivity(v);
 
         } else if (id == R.id.Post) {
+            Intent ty = new Intent(getApplicationContext(),PagesDeveloper.class);
+            startActivity(ty);
 
         } else if (id == R.id.Messages) {
 
