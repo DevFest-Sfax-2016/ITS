@@ -7,7 +7,7 @@
             android:icon="@drawable/profile"
             android:title="Profile" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/Projects"
             android:icon="@drawable/projects"
             android:title="Projects" />
         <item
